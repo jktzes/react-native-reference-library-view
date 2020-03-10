@@ -1,10 +1,10 @@
-#import "AppDelegate.h"
+#import "AppDele.h"
 
-@interface AppDelegate ()
+@interface AppDele()
 
 @end
 
-@implementation AppDelegate
+@implementation AppDele
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

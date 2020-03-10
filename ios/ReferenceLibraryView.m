@@ -1,6 +1,6 @@
 #import "ReferenceLibraryView.h"
 #import <UIKit/UIReferenceLibraryViewController.h>
-#import "AppDelegate.h"
+#import "AppDele.h"
 
 @implementation ReferenceLibraryView
 
@@ -18,7 +18,7 @@ RCT_EXPORT_METHOD(showDefinitionForTerm:(NSString*)term callback:(RCTResponseSen
 
     dispatch_async(dispatch_get_main_queue(), ^{
       UIReferenceLibraryViewController *referenceLibraryVC = [[UIReferenceLibraryViewController alloc] initWithTerm:term];
-      UIViewController *rootVC = ((AppDelegate*)[UIApplication sharedApplication].delegate).window.rootViewController;
+      UIViewController *rootVC = ((AppDele*)[UIApplication sharedApplication].delegate).window.rootViewController;
       [rootVC presentViewController:referenceLibraryVC animated:YES completion:nil];
     });
   }
