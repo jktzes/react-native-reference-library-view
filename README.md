@@ -8,10 +8,19 @@
 
 `$ react-native link react-native-reference-library-view`
 
+## Demo
+# ![Demo](https://thumbs.gfycat.com/ScornfulHastyImperialeagle-size_restricted.gif)
+
 ## Usage
 ```javascript
-import ReferenceLibraryView from 'react-native-reference-library-view';
+import ReferenceLibraryView from 'react-native-reference-library-view'
 
-// TODO: What to do with the module?
-ReferenceLibraryView;
+ReferenceLibraryView.showDefinitionForTerm(word, (hasDefinition) => {
+  // Dictionary modal will show regardless of hasDefinition result
+  if (!hasDefinition) {
+    //callback when no definition available
+  } else {
+    // callback when definition available
+  }
+})
 ```
