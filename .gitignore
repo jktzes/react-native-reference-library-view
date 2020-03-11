@@ -8,6 +8,10 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+# bash scripts
+#
+update
+
 # Xcode
 #
 build/

@@ -1,3 +1,0 @@
-#!/bin/bash#
-ARG1=${1:-patch}
-git add . && git commit -m $ARG1 && npm run patch
