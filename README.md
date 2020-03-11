@@ -1,5 +1,8 @@
 # react-native-reference-library-view
 
+## Demo
+# ![Demo](https://thumbs.gfycat.com/ScornfulHastyImperialeagle-size_restricted.gif)
+
 ## Getting started
 
 `$ npm install react-native-reference-library-view --save`
@@ -7,9 +10,6 @@
 ### Mostly automatic installation
 
 `$ react-native link react-native-reference-library-view`
-
-## Demo
-# ![Demo](https://thumbs.gfycat.com/ScornfulHastyImperialeagle-size_restricted.gif)
 
 ## Usage
 ```javascript
