@@ -13,6 +13,13 @@ RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(showDefinitionForTerm:(NSString*)term callback:(RCTResponseSenderBlock)callback)
 {
+  dispatch_async(dispatch_get_main_queue(), ^{
+    UIReferenceLibraryViewController *referenceLibraryVC = [[UIReferenceLibraryViewController alloc] initWithTerm:term];
+    // UIViewController *rootVC = ((AppDele*)[UIApplication sharedApplication].delegate).window.rootViewController;
+    UIViewController *ctrl = RCTPresentedViewController();
+    [ctrl presentViewController:referenceLibraryVC animated:YES completion:nil];
+  });
+
   if (callback == nil)
     return;
 
@@ -20,15 +27,7 @@ RCT_EXPORT_METHOD(showDefinitionForTerm:(NSString*)term callback:(RCTResponseSen
   if ([UIReferenceLibraryViewController dictionaryHasDefinitionForTerm:term])
   {
     hasDefinition = YES;
-
   }
-
-  dispatch_async(dispatch_get_main_queue(), ^{
-    UIReferenceLibraryViewController *referenceLibraryVC = [[UIReferenceLibraryViewController alloc] initWithTerm:term];
-    // UIViewController *rootVC = ((AppDele*)[UIApplication sharedApplication].delegate).window.rootViewController;
-    UIViewController *ctrl = RCTPresentedViewController();
-    [ctrl presentViewController:referenceLibraryVC animated:YES completion:nil];
-  });
 
   callback(@[@(hasDefinition)]);
 }
