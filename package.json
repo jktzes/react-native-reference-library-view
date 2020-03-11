@@ -5,6 +5,7 @@
   "description": "a library that allows you to use UIReferenceLibraryViewController in react native",
   "main": "index.js",
   "scripts": {
+    "patch": "npm version patch && npm publish", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

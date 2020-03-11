@@ -2,6 +2,11 @@
 #import <UIKit/UIReferenceLibraryViewController.h>
 #import "AppDele.h"
 
+// not sure which dependency is needed here
+#import <React/RCTUtils.h>
+#import <React/RCTLog.h>
+#import <React/RCTConvert.h>
+
 @implementation ReferenceLibraryView
 
 RCT_EXPORT_MODULE();
