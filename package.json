@@ -1,11 +1,11 @@
 {
   "name": "react-native-reference-library-view",
   "title": "React Native Reference Library View",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "a library that allows you to use UIReferenceLibraryViewController in react native",
   "main": "index.js",
   "scripts": {
-    "patch": "npm version patch && npm publish", 
+    "patch": "npm version patch && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
